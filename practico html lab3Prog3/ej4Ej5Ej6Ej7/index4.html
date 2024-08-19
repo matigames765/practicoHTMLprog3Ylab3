@@ -1,0 +1,128 @@
+<!--Ej 4.Descripción:
+Incorpora enlaces internos y externos para crear un sistema de navegación. Además, utiliza listas ordenadas (<ol>) y 
+desordenadas (<ul>) para organizar información en formato de lista.
+Requisitos:
+●	Crear al menos un enlace a una página externa.
+●	Crear al menos dos enlaces internos que lleven a diferentes secciones dentro del mismo documento.
+●	Incluir tanto una lista ordenada como una desordenada.
+-->
+<!--Ej 5.Descripción:
+Incorpora imágenes, videos y audios en tu documento HTML para enriquecer el contenido. Asegúrate de que estos elementos sean 
+accesibles y se presenten correctamente en el navegador.
+Requisitos:
+●	Incluir al menos una imagen con un atributo alt descriptivo.
+●	Incluir al menos un video con controles de reproducción.
+●	Incluir al menos un archivo de audio con controles de reproducción.
+-->
+<!--Ej 6.Descripción:
+Crea una tabla para organizar datos de manera estructurada. Las tablas son útiles para presentar información en filas y columnas, 
+como horarios, precios o estadísticas.
+Requisitos:
+●	Crear una tabla con un encabezado (<thead>), un cuerpo (<tbody>), y al menos dos filas.
+●	Asegurarse de que las celdas están claramente etiquetadas y los datos sean legibles.
+-->
+<!--Ej 7.Descripción:
+Diseña un formulario para recolectar datos del usuario. Los formularios son esenciales en la interacción con el usuario y 
+pueden incluir varios tipos de campos.
+Requisitos:
+●	Crear un formulario que incluya campos de texto, correo electrónico y un área de texto para mensajes.
+●	Añadir un botón de envío que permita al usuario enviar los datos.
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+    }
+    th, td {
+        padding: 8px;
+        text-align: left;
+    }
+    
+    </style>
+</head>
+<body>
+    <div>
+        <h1>4.Enlaces y listas</h1>
+        <p>Visita nuestro <a href="sitioWeb.html">sitio web</a> para mas informacion</p>
+        <div>
+            <p>Enlaces internos</p>
+            <ul>
+                <li><a href="#otraSeccion">Otra parte de la pagina</a></li> <!--Preguntar a que se refiere con la estructura-->
+                <li><a href="#seccionMultimedia">Ir a Multimedia</a></li>
+                <li><a href="#seccionFormularios">Ir a Formulario</a></li>
+            </ul>
+        </div>
+        <div>
+            <ul>
+                <li>Primer item de una lista desordenada</li>
+                <li>Segundo item de una lista desordenada</li>
+            </ul>
+        </div>
+        <div>
+            <ol>
+                <li>Primer item de una lista ordenada</li>
+                <li>Segundo item de una lista ordenada</li>
+            </ol>
+        </div>
+
+    </div>
+    <div>
+        <h2 id = "otraSeccion">Otra parte de la pagina</h2>
+    </div>
+    <div>
+        <h2 id = "seccionMultimedia">5.Elementos Multimedia</h2>
+        <img src="https://www.adidaspadelargentina.com/wp-content/uploads/2024/01/Metalbone_HRD_3.3_ADRK1AA1U0016F_FRONT.jpg" width="200px" height="200px" alt="Paleta de Alejandro Galan"/>
+        <video src="http://distribution.bbb3d.renderfarming.net/video/mp4/bbb_sunflower_1080p_60fps_stereo_abl.mp4" controls autoplay width="200px" height="200px"></video>
+        <audio src="https://download.blender.org/peach/trailer/trailer_1080p.ogg" controls autoplay></audio>
+    </div>
+
+    <div>
+        <h2>6.Tablas</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Columna 1</th>
+                    <th>Columna 2</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Dato 1</td>
+                    <td>Dato 2</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td>Dato 3</td>
+                    <td>Dato 4</td>
+                </tr>
+            </tfoot>
+        </table>
+    </div>
+
+    <div>
+        <h2 id = "seccionFormularios">7.Formularios</h2>
+        <form>
+            <div>
+                <label>Nombre:</label>
+                <input type="text"/>
+            </div>
+            <div>
+                <label>Email:</label>
+                <input type="email"/>
+            </div>
+            <div>
+                <label>Mensaje:</label>
+                <input type="text"/>
+            </div>
+            <button type="submit">Enviar</button>
+        </form>
+    </div>
+</body>
+</html>
